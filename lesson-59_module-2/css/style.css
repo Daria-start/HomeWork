@@ -1,0 +1,86 @@
+body {
+    background-color: #232323;
+}
+
+.wrap {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    background: #4e4e4e;
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f56565;
+    position: relative;
+    bottom: -400px;
+    left: 200px;
+    animation: colorful-circle 5s infinite alternate linear;    
+}
+
+@keyframes colorful-circle {
+    0% {
+        background: #f56565;
+        bottom: -400px;
+        left: 200px;
+        width: 100px;
+        height: 100px;
+        
+    }
+    12.5% {
+        background: #fba559;
+        width: 70px;
+        height: 70px;
+    }
+    25% {
+        bottom: -200px;
+        left: 0;
+        background: #eedc53;
+        width: 100px;
+        height: 100px;
+    }
+    37.5% {
+        background: #9ff565;
+        width: 70px;
+        height: 70px;
+    }
+    50% {
+        bottom: 0;
+        left: 200px;
+        background: #55d4e5;
+        width: 100px;
+        height: 100px;
+    }
+    62.5% {
+        background: #657ff5;
+        width: 70px;
+        height: 70px;
+    }
+    75% {
+        bottom: -200px;
+        left: 400px;
+        background: #9155e5;
+        width: 100px;
+        height: 100px;
+    }
+    87.5% {
+        background: #f565d3;
+        width: 70px;
+        height: 70px; 
+    }
+    100% {
+        background: #f56565;
+        bottom: -400px;
+        left: 200px;
+        width: 100px;
+        height: 100px;
+    }
+}
